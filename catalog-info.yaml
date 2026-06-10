@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: mi-primer-servicio          # sin espacios, en kebab-case
+  description: "Descripción breve del servicio"
+  tags:
+    - python                        # lenguaje o tecnología principal
+    - api
+  annotations:
+    github.com/project-slug: <tu-usuario>/<tu-repo>
+spec:
+  type: service                     # service | website | library
+  lifecycle: production             # experimental | production | deprecated
+  owner: user:default/CofgCode  # o group:default/<nombre-equipo>
+
